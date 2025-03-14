@@ -17,7 +17,9 @@ print(len(entries))
 data = []
 for entry in entries:
    td_film_details = entry.find('div', class_='info')
+   #div_voite = entry.find('div', class_='selects vote_widget')
    film_name = td_film_details.find('a').text
+   #film_voite = div_voite.find('div').text
    data.append({'film_name': film_name})
 
 print(data)
