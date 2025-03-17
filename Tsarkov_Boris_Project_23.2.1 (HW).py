@@ -18,16 +18,7 @@ def get_online_content(type_content, page_num):
 
     return data
 
-#print(get_online_content('movies', 2))
 online_content = get_online_content('movies', 15)
 df = pd.DataFrame(online_content)
 df.to_excel('online_content.xlsx')
 
-"""n = '2004, Россия'
-d = []
-result = n.split(' ')
-year = result[0].replace(',', '')
-#year.replace(',', '')
-d.append({'year': year, 'coutry': result[1]})
-print(year.replace(',', ''))
-print(d)"""
